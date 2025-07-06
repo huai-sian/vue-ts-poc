@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import PhotoWaterfall from './components/PhotoWaterfall.vue';
-import HelloWorld from './components/privacy.vue';
+import PhotoWaterfall from '@/components/PhotoWaterfall.vue';
 
 const count = ref(2);
 </script>
@@ -14,9 +13,7 @@ const count = ref(2);
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a> -->
+    <PhotoWaterfall :count="count" /> 
   </div>
-  <main>
-    <router-view></router-view>
-  </main>
   <!-- <PhotoWaterfall :count="count" /> -->
 </template>

@@ -10,9 +10,16 @@ declare module 'vue' {
   export interface GlobalComponents {
     Countdown: typeof import('./src/components/Countdown.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElPagination: typeof import('element-plus/es')['ElPagination']
+    ElTable: typeof import('element-plus/es')['ElTable']
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
+    ElTabPane: typeof import('element-plus/es')['ElTabPane']
+    ElTabs: typeof import('element-plus/es')['ElTabs']
     Lineterm: typeof import('./src/components/lineterm.vue')['default']
     Member: typeof import('./src/components/member.vue')['default']
     PhotoWaterfall: typeof import('./src/components/PhotoWaterfall.vue')['default']
     Privacy: typeof import('./src/components/privacy.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }

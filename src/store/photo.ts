@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import type { UnsplashPhoto } from "../service/unsplash";
+import type { UnsplashPhoto } from "../types/photos";
 import { fetchPhoto } from '../service/unsplash';
 
 export const usePhotoStore = defineStore('photos', () => {

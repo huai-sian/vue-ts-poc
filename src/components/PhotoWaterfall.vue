@@ -1,5 +1,4 @@
 <template>
-  <Countdown />
   <div class="mb-4">
     <el-button disabled>Default</el-button>
     <el-button type="primary" disabled>Primary</el-button>
@@ -20,7 +19,6 @@
           @load="(e: Event) => (e.target as HTMLImageElement).classList.add('opacity-100')"
           @error="(e: Event) => (e.target as HTMLImageElement).src = '../assets/placeholder-image.jpg'"
         />
-
         <p class="text-sm text-gray-600 mt-2 line-clamp-2">{{ photo.slug }}</p>
       </div>
     </div>

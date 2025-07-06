@@ -11,7 +11,12 @@ const photo = z.object({
     small: z.string(),
     thumb: z.string(),
     small_s3: z.string(),
-  })
+  }),
+  user: z.object(
+    {
+      username: z.string(),
+    }
+  )
 });
 
 const photos = z.array(photo);

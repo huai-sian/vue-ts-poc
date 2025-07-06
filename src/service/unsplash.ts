@@ -1,19 +1,6 @@
 import axios from 'axios';
 import { Types } from '../schema';
-
-export interface UnsplashPhoto {
-  id: string;
-  slug: string;
-  created_at: string;
-  urls: {
-    raw: string;
-    full: string;
-    regular: string;
-    small: string;
-    thumb: string;
-    small_s3: string;
-  }
-}
+import type { UnsplashPhoto } from "../types/photos";
 
 async function handleApiResponse(schema: any, raw: unknown) {
   const result = schema.safeParse(raw);
