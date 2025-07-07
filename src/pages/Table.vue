@@ -27,8 +27,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { fetchPhoto } from '@/service/unsplash';
-import type { UnsplashPhoto } from '@/types/photos';
+import { fetchPhoto } from '../service/unsplash';
+import type { UnsplashPhoto } from '../types/photos';
 import type { TabsPaneContext } from 'element-plus';
 
 const route = useRoute();
@@ -50,11 +50,12 @@ const handleRouteQuery = () => {
 }
 
 const handleClick = (tab: TabsPaneContext, event: Event) => {
+  console.log(event);
   router.push({ path: '/table', query: { tab: tab.paneName ?? '' } });
 }
 
 const handleSelectionChange = () => {
-  
+  console.log(multipleSelection);
 }
 
 

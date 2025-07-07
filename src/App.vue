@@ -1,9 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import PhotoWaterfall from './components/PhotoWaterfall.vue';
-import HelloWorld from './components/privacy.vue';
-
-const count = ref(2);
 </script>
 
 <template>

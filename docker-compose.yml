@@ -1,0 +1,7 @@
+services:
+  vue-poc:
+    image: vue-poc
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - '80:80'

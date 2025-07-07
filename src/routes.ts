@@ -1,7 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
 import Waterfall from '@/pages/Waterfall.vue';
-import Countdown from '@/components/Countdown.vue';
 import Table from '@/pages/Table.vue';
 
 const routes = [

@@ -29,7 +29,6 @@
 import { usePhotoStore } from '../store/photo';
 import { storeToRefs } from 'pinia';
 import { ref, onMounted, onUnmounted } from 'vue';
-import Countdown from './Countdown.vue';
 
 defineProps<{ count: number }>();
 const photoStore = usePhotoStore();
